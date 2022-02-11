@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} NEURALIDAYS  {% endblock %} </title>
+</head>
+<script>
+    function darkMode(){
+        let element=document.body;
+        element.classList.toggle("dark-mode");
+    }
+    var mybutton = document.getElementById("cool-button");
+
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+function myFunction() {
+var x = document.getElementById("divBea");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+</script>
+<header>
+    <div id="container">
+        <img class="logo" src="{{ url_for('static', filename='images/image45.gif') }}" alt="logo" title="LOGO">
+        <img class="logo1"src="{{ url_for('static', filename='images/take-out-vr-game-vr-chat.gif') }}" alt="logo1" title="LOGO1">
+        <img class="text" src="{{ url_for('static', filename='images/text.png') }}" alt="text" title="text">
+</div>
+
+<div class="austria">
+    <img class="mpic1" src="{{ url_for('static', filename='images/Austria_Mountains_Lake_Scenery_Panorama_Tyrol_Alps_600571_1280x435.jpg') }}">
+</div>
+<br>
+<span class="desktop">
+    <h3>You are on desktop mode</h3>
+</span>
+<span class="mobile">
+    <h3>You are on mobile mode</h3>
+</span>
+
+
+
+<main>
+    <a href="/index"alt="button" title="Home">  
+        <button class="cool-button">
+            Home
+        </button>
+    </a> 
+    <a href="/services"alt="button" title="Service">  
+        <button class="cool-button">
+            Service
+        </button>
+    </a>
+    <a href="/aboutus"alt="button" title="About Us"> 
+        <button class="cool-button">
+            About Us
+        </button>
+    </a>
+    <a href="/contactus"alt="button" title="Contact Us"> 
+        <button class="cool-button">
+            Contact Us
+        </button>
+    </a> 
+    <a href="/chatbot"alt="button" title="Chatbot9000"> 
+        <button class="cool-button">
+            Chatbot9000
+        </button>
+    </a>
+    <button onclick="darkMode()" class="cool-button">
+        Dark Mode
+    </button>
+    <nav>
+        <div class="navbar">   
+            <a href="/index" alt="button" title="Home">
+                <button class="buttonMob">
+                    Home
+                </button>
+            </a>
+            <a href="/services"alt="button" title="Service"> 
+                <button class="buttonMob">
+                    Service
+                </button>
+            </a>
+            <a href="/aboutus"alt="button" title="About Us"> 
+                <button class="buttonMob">
+                    About Us
+                </button>
+            </a>
+            <a href="/contactus"alt="button" title="Contact Us"> 
+                <button class="buttonMob">
+                    Contact Us
+                </button>
+            </a>
+            <a href="/chatbot"alt="button" title="Chatbot9000"> 
+                <button class="buttonMob">
+                    Chatbot9000
+                </button>
+            </a>
+            <button onclick="darkMode()" class="buttonMob">
+                Dark Mode
+            </button>
+
+        </div>    
+    </nav>
+</header>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

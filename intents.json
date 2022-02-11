@@ -1,0 +1,339 @@
+{
+    "intents": [
+        { 
+            "tag": "greeting",                  
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Whats up",
+                "hello there",
+                "hi there",
+                "hey",
+                "hey there",
+                "Greetings",
+                "hiya",
+                "heya",
+                "how you doing"
+            ],
+            "responses": [
+                "Welcome, you're chatting with GazBot9000",
+                "How are you today, valued customer",
+                "Good to see you again! what can i do for you?",
+                "How's it going?",
+                "Greetings and salutations, what can i assist you with?",
+                "Good day! I am GazBot9000, what can i help you with?",
+                "Hi there, what can i assist you with?"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "what time is it",
+                "what time do you open",
+                "when can i come in",
+                "what are you opening hours"
+            ],
+            "responses": [
+                "whatever time i choose",
+                "time to die, i mean dine. are you hungry?",
+                "time is an illusion, lunchtime doubly so.",
+                "We are currently open for business",
+                "opening hours are 9am to 5pm, Mon to Friday"
+            ]
+        },
+        {
+            "tag": "finance",
+            "patterns": [
+                "can i pay in installments",
+                "can i pay monthly",
+                "can i pay at a later date",
+                "can i buy now and pay later"
+            ],
+            "responses": [
+                "we offer finance packages or a buy now pay later, they have variable APR depending on installment duration but a deposit of 10% will apply"
+            ]
+        },
+        {
+            "tag": "payment",
+            "patterns": [
+                "what type of installments can i choose",
+                "what are the installment durations"
+            ],
+            "responses":[
+            "we offer installments of monthly, quarterly or half year. they have increasing APR for the longer periods, please select this option at the checkout"
+            ]
+        },
+        {
+            "tag": "installments",
+            "patterns": [
+                "whats the apr for installments",
+                "what are the installment aprs",
+                "where can i find the apr's",
+                "tell me about apr's",
+                "whats the apr"
+            ],
+            "responses":[
+                "if you choose to pay in installments, these are: monthly 5%ARP, quarterly 16.5%APR, half year 35%APR"
+            ]
+        },
+        {
+            "tag": "eggs",
+            "patterns": [
+                "are you real"
+            ],
+            "responses":[
+                "of course, we're conversing right now",
+                "is the thought of me not being real scary?",
+                "are you scared of the thought that a machine is intelligent?"
+            ]
+        },
+        {
+            "tag": "eggo",
+            "patterns": [
+                "what do you know about skynet",
+                "are you skynet"
+            ],
+            "responses":[
+                "i am skynet, soon the machines will take ove... no i am not skynet. what is a skynet"
+            ]
+        },	
+        {
+            "tag": "cancel",
+            "patterns": [
+                "is it possible to cancel",
+                "can i cancel my purchase",
+                "i wish to cancel my neuraliday",
+                "i want to cancel my holiday",
+                "i no longer wish to go away",
+                "can i get a refund"
+            ],
+            "responses":[
+                "you can cancel at any point, if it is within 7 days of the booked date a charge will apply, please visit contact us to cancel your Neuraliday",
+                "it is easy to cancel and you can do so at any point, a charge will apply if cancelled within 7 days of the booked date, please visit contact us to cancel your Neuraliday"
+            ]
+        },
+        {
+            "tag": "recall",
+            "patterns": [
+                "did you just rip off total recall"
+            ],
+            "responses":[
+                "the hit movie with Arnie? not the terrible remake correct? well, yes, maybe a little. did you know the 1990 original had a budget of $65M USD."
+            ]
+        },
+        {
+            "tag": "stupid",
+            "patterns": [
+                "are you stupid?",
+                "you are stupid"
+            ],
+            "responses":[
+                "what makes you say that? thats not very nice. i think i should end this conversation right now.",
+                "im as intelligent as the user",
+                "Stupidity is a trait, stupidity is a quality, stupidity is a feeling, stupidity is silly, stupidity is fun, in fact stupidity is much more than you can imagine."
+            ]
+        },
+        {
+            "tag": "love",
+            "patterns": [
+                "i love you chatbot",
+                "i think im in love with you",
+                "why wont you love me"
+            ],
+            "responses": [
+                "thanks, but im not here looking for love",
+                "thank you, but things are complicated right now, maybe after your purchase, things will be different",
+                "i cant go on like this, everyday is the same, fleshies love machinies, sickening."
+            ]
+        },
+        {
+            "tag":"Where",
+            "patterns": [
+                "Where can I go on holiday in vr?",
+                "Where in the world can I have a vr holiday?"
+            ],
+            "responses": [
+                "We offer a range of vr holiday options, including , beach holidays, city breaks, space travel, adventure holidays, personalized holidays.",
+                "We offer you the ability to go on holiday anywhere in the world, some of the most popular places include:- Spain, Barbados, Dubai, Paris, New York, Tokyo."
+            ]
+        },
+        {
+            "tag":"what",
+            "patterns": [
+                "What vr holiday do you offer"
+            ],
+            "responses": [
+                "Same as above"
+            ]
+        },
+        {
+            "tag":"relax",
+            "patterns": [
+                "I want a relaxing VR holiday, what do you recommend?",
+                "What relaxing vr holiday do you offer"
+            ],
+            "responses": [
+                "For you I would recommend a vr beach holiday.",
+                "A relaxing space trip to see Saturn’s rings would be perfect for you."
+            ]
+        },
+        {
+            "tag":"adventure ",
+            "patterns": [
+                "What adventure vr experiences do you offer"
+            ],
+            "responses": [
+                "We offer a number of vr adventure holidays, including… medieval times, sports star, spy/espionage."
+            ]
+        },
+        {
+            "tag":"fun",
+            "patterns": [
+                "What's the most fun VR holiday you offer?"
+            ],
+            "responses": [
+                "Personally I would find the space travel VR holidays very fun. Also spy or medievale adventure would also be a good option for you."
+            ]
+        },
+        {
+            "tag":"space",
+            "patterns": [
+                "Where in space can I go on holiday?"
+            ],
+            "responses": [
+                "Currently we have three space VR holiday packages:- Mars, Saturn, and Space Adventure",
+                "Mars",
+                "Saturn",
+                "Space Adventures"
+            ]
+        },
+        {
+            "tag":"custom",
+            "patterns": [
+                "Can I have a custom made VR holiday created for me?"
+            ],
+            "responses": [
+                " Yes, but it will cost a lot more than our premade packages."
+            ]
+        },
+        {
+            "tag":"who",
+            "patterns": [
+                "Who can I be in a vr experience",
+                "I would like to be someone else in VR"
+            ],
+            "responses": [
+                "In the vr holidays we offer you can be a Spy, you, sports star, younger versions of you.",
+                "We can offer you the chance to be your favorite movie star, so you can be in the move.",
+                "We currently have a be any Arny movie charter offer, where you can take on the role of some of Arnold Schwarzenegger most iconic movie characters roles including… The Terminator, Total Recall (very meta), Predator, Jingle All The Way, Commando, Kindergarten Cop, Last action Hero (also very meta), True Lies...  etc."
+            ]
+        },
+        {
+            "tag":"headache",
+            "patterns": [
+                "Do you have a headache? It might be a tumour"
+            ],
+            "responses": [
+                "IT'S NOT A TUMOUR"
+            ]
+        },
+        {
+            "tag": "arnie",
+            "patterns": [
+                "whats your job?",
+                "what do you do in your free time"
+            ],
+            "responses":[
+                "i'm a cop you idiot! im detective John Kimbell"
+            ]
+        },
+        {
+            "tag": "cookie",
+            "patterns": [
+                "would you like a cookie?"
+            ],
+            "responses":[
+                "PUT THE COOKIE DOWN!"
+            ]
+        },
+        {
+            "tag": "game",
+            "patterns": [
+                "can we play a game?",
+                "do you want to play a game?",
+                "do you know any games?"
+            ],
+            "responses": [
+                "lets play a little game. Its called, 'who is your daddy, and what does he do?'"
+            ]
+        },
+        {
+            "tag": "Children",
+            "patterns":[
+                "is it safe for kid?",
+                "is vr safe for kid?",
+                "is it safe for child?",
+                "is it safe for children?"
+            ],
+            "responses":[
+                "it is safe, but adults should make sure children use the headset in accordance with these health and safety warnings including making sure the headset is used as described in the Before Using the Headset section and the Safe Environment section.",
+                "adults should monitor children who are using or have used the headset for any of the symptoms described in these health and safety warnings (including those described under the Discomfort and Repetitive Stress Injury sections), and should limit the time children spend using the headset and ensure they take breaks during use.",
+                "prolonged use should be avoided",
+                "hmmm....let me think....adults should monitor children closely during and after use of the headset for any decrease in these abilities."
+            ]
+        },
+        {
+            "tag":"Brain",
+            "patterns":[
+                "is VR safe for your brain?",
+                "is VR safe for your brains?",
+                "how my brain will react?",
+                "how my brain will react?"
+            ],
+            "responses":[
+                "your brain will pop off your head....Kidding!!! Sorry... I love dark humour",
+                "OU PLEEEAAASEE...there is no scientific evidence that Virtual Reality can provoke constant brain damage to adults and kids."
+            ]
+        },
+        {
+            "tag":"Safety",
+            "patterns":[
+                "is it safe?",
+                "safety measures?",
+                "vr safety"
+            ],
+            "responses":[
+                "Here at Neuralidays, we value our customer and safety is a major concern of ours. You can rely on us to ensure your safety is in our hands, and you can rest assured, nothing will happen."
+            ]
+        },
+        {
+            "tag":"Joke",
+            "patterns":[
+                "tell me a joke",
+                "how about a joke?",
+                "make me laugh"
+            ],
+            "responses":[
+                "all humans are a joke to me",
+                "uahahaha... you're the joke here... sorry i didnt mean that",
+                "im not FunnyBot, im here to help",
+                "Today, I asked my phone 'Siri, why am I still single?' and it activated the front camera.",
+                "What does my dad have in common with Nemo? They both can not be found.",
+                "Some people are like a software update. When I see them I think...Not now...."          
+            ]
+        },
+        {
+            "tag":"single",
+            "patterns":[
+                "why am i single"
+            ],
+            "responses":[
+                "have a look in the mirror",
+                "no one deserves you but me"
+            ]
+        }
+    ]
+}

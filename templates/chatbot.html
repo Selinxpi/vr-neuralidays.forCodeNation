@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block title %}
+    Chatbot</title>
+{% endblock %}
+{% block content %}
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <h1 class="glow">This is the Chatbot</h1>
+    <br>
+    <br>
+    <div class="Chatbox">
+        <img id="botpic" src="../static/images/robot.gif" alt="robot">
+        <div id="answebox">
+            <div id="Giphy the ChatBot says...">
+                <form role="form" method="POST" action="/chatbot">
+                        <div id="questionbox">
+                            <input type="text"
+                                name="message"
+                                id="message-box"
+                                placeholder="Enter your question"
+                                style="max-width: 300px;" autofocus required>
+                                <button id="submit-button" type="submit">
+                                    Submit
+                                </button>
+                        
+                </form>
+                    <div class="bottext">
+                        {% for item in chat_box %}
+                        {% if item is in question_list %}
+                        <br>
+                        <h3 class="question">You:   {{ item }}</h3>
+                        <br>
+                        {% elif item is in answer_list %}
+                        <h3 class="answer">Giphy says: {{ item }}</h3>
+                        {% endif %}
+                        {% endfor %}
+                        <br> <br>
+
+                        </div> 
+                    </div>                        
+            </div>
+        </div>    
+    </div>
+
+
+    <div class="ChatboxMob">
+        <div id="answebox">
+            <img class= "giphy" src="../static/images/giphy.gif" alt="robot">
+            <div id="Giphy the ChatBot says...">
+                <form role="form" method="POST" action="/chatbot">
+                    <div id="questionboxMob">
+                        <input type="text"
+                            name="message"
+                            id="message-box"
+                            placeholder="Enter your question"
+                            style="max-width: 300px;" autofocus required>
+                            <button id="submit-buttonMob" type="submit">
+                                Submit
+                            </button>
+                    
+            </form>
+                </div>
+                    <h3>Giphy the ChatBot says...</h3>
+                    {% for item in chat_box %}
+                    {% if item is in question_list %}
+                    <br>
+                    <h3 class="question">You:   {{ item }}</h3>
+                    <br>
+                    {% elif item is in answer_list %}
+                    <h3 class="answer">Giphy says: {{ item }}</h3>
+                    {% endif %}
+                    {% endfor %}
+            </div>
+        </div>        
+    </div>
+    <footer>
+        <button onclick="topFunction()" id="cool-button" class="cool-button">Top</button>
+        <div class="javascript-box"></div>
+        <br>
+        <br>
+        <br>
+        <p id="cookie"></p>
+        
+    </footer>
+{% endblock %}
+</body>
+</html>

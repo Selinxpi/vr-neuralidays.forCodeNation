@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<script>
+        function darkMode(){
+            let element=document.body;
+            element.classList.toggle("dark-mode");
+        }
+        var mybutton = document.getElementById("cool-button");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function myFunction() {
+  var x = document.getElementById("divBea");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    </script>
+<br>
+<br>
+<br>
+    <div>
+        <h1 class="h1">Services we provide.</h1>
+        <h1>Not your standard holiday provider.</h2>
+            <button class="cool-button" onclick="myFunction()">Packages</button>
+    </div>
+    <br>
+        <br>
+        <br>
+    <article id="divBea">
+        <div class="javascript-box">
+            <h2 onmouseover="mouseOverBe(this)" onmouseout="mouseOutBe(this)">BEACH NEURALIDAYS</h2>
+            </div>
+            <img class= "all_img" src="{{ url_for('static', filename='images/beach.jpg') }}" alt="">
+        <p>Popular options;</p>
+        <ul>
+            <li>Spain</li>
+            <li>Barbados</li>
+            <li>Dubai</li>
+        </ul>
+        <p> Hate sand, but love hot weather, then this is the package for you.</p>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo ut enim ipsum tenetur vero voluptate sapiente consectetur consequatur placeat dignissimos?</p>
+        <p> Prices start from £1000</p>
+        <br>
+        <br>
+        <br>
+        <h2 onmouseover="mouseOverCi(this)" onmouseout="mouseOutCi(this)">CITY NEURALIDAYS</h2>
+        <p>Popular options;</p>
+        <ul>
+            <li>Paris</li>
+            <li>New York</li>
+            <li>Tokyo</li>
+        </ul>
+        <img class= "all_img" src="{{ url_for('static', filename='images/city.jpg') }}" alt="">
+        <p>Today, getting to the other end of the country, or even jetting across the oceans is easy, so top must-see destinations are within reach, and it’s a great way to get away from it all.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis veniam sit quibusdam eveniet accusantium? Odio corrupti, delectus ipsam odit cum aperiam repudiandae in sit.</p>
+        <p> Prices start from £950</p>
+        <br>
+        <br>
+        <br>
+        <h2 onmouseover="mouseOverSp(this)" onmouseout="mouseOutSp(this)">SPACE NEURALIDAYS</h2>
+        <p>Popular options;</p>
+        <ul>
+            <li>Mars</li>
+            <li>Saturn</li>
+            <li>Space adventure</li>
+        </ul>
+        <img class= "all_img" src="{{ url_for('static', filename='images/space.jpg') }}" alt="">
+        <p>Blasting off into space is very expensive, but here at Neuralidays, we can send you into space for a fraction of the cost. </p>
+        <p>Visit the mysterious red planet of Mars, climb the icey mountains of Pluto or float around in space from the safety of Neuralidays.</p>
+        <p> Prices start from £10,000</p>
+        <br>
+        <br>
+        <br>    
+        <h2 onmouseover="mouseOverOt(this)" onmouseout="mouseOutOt(this)">OTHER NEURALIDAYS</h2>
+        <p>Popular options;</p>
+        <ul>
+            <li>Medieval Times</li>
+            <li>Sports Star</li>
+            <li>Spy / Espionage</li>
+        </ul>
+        <img class= "all_img" src="{{ url_for('static', filename='images/other.jpg') }}" alt="">
+        <p>Ever wanted to become the ruler of your own Kingdom? A sports star with the world at their feet? or become a Secret Agent to infiltrate and overthrow? Well Neuralidays has got your covered.</p>
+        <p>We can open up a world of opportunites for you to slay a dragon, save the princess or prevent or cause WW3.</p>
+        <p> Prices start from £15,000</p>
+        <br>
+        <br>
+        <br>
+        <h2 onmouseover="mouseOverRe(this)" onmouseout="mouseOutRe(this)">OTHER NEURALIDAYS</h2>
+        <p>Popular options;</p>
+        <ul>
+            <li>Childhood memories</li>
+            <li>Time with a loved one</li>
+            <li>Saying Hello to a pet again</li>
+        </ul>
+        <img class= "all_img" src="{{ url_for('static', filename='images/recall.jpg') }}" alt="">
+        <p>Time travel is possible at Neuralidays. We can send you to any point in time which you have previously lived. Spend time with a passed loved one, say hello to a childhood pet or friend or be a kid again.</p>
+        <p>Here at Neuralidays, with our techonology anything is possible.</p>
+        <p>Some limitations apply to memories once Recall has completed. See T&Cs for details.</p>
+        <p> Prices start from £20,000</p>
+    </article>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <button onclick="topFunction()" id="cool-button" class="cool-button">Top</button>
+        <body onload="checkCookies()"></body>
+        <div class="javascript-box"></div>
+        <br>
+        <br>
+        <br>
+        <p id="cookie"></p>
+        <h5>Gaz ©</h5>
+    </footer>
+
+
+</body>
+
+{% endblock %}
